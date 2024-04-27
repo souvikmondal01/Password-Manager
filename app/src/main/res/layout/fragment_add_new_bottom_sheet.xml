@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior"
+    tools:context=".presentation.fragment.AddNewBottomSheet">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingHorizontal="24dp"
+        android:paddingBottom="24dp">
+
+        <com.google.android.material.bottomsheet.BottomSheetDragHandleView
+            android:id="@+id/drag_handle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tf_account_name"
+            style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:boxCornerRadiusBottomEnd="8dp"
+            app:boxCornerRadiusBottomStart="8dp"
+            app:boxCornerRadiusTopEnd="8dp"
+            app:boxCornerRadiusTopStart="8dp"
+            app:layout_constraintTop_toBottomOf="@id/drag_handle">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_account_name"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:fontFamily="@font/roboto_medium"
+                android:hint="Account Name"
+                android:inputType="text"
+                android:padding="2dp"
+                android:scrollHorizontally="true" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tf_username"
+            style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:boxCornerRadiusBottomEnd="8dp"
+            app:boxCornerRadiusBottomStart="8dp"
+            app:boxCornerRadiusTopEnd="8dp"
+            app:boxCornerRadiusTopStart="8dp"
+            app:layout_constraintTop_toBottomOf="@id/tf_account_name">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_username"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:fontFamily="@font/roboto_medium"
+                android:hint="Username/ Email"
+                android:inputType="text"
+                android:padding="2dp"
+                android:scrollHorizontally="true" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tf_password"
+            style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:boxCornerRadiusBottomEnd="8dp"
+            app:boxCornerRadiusBottomStart="8dp"
+            app:boxCornerRadiusTopEnd="8dp"
+            app:boxCornerRadiusTopStart="8dp"
+            app:endIconMode="password_toggle"
+            app:layout_constraintTop_toBottomOf="@id/tf_username">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_password"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:fontFamily="@font/roboto_medium"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:padding="2dp"
+                android:scrollHorizontally="true" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_add"
+            style="@style/Widget.Material3.Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/poppins_bold"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:text="Add New Account"
+            app:layout_constraintTop_toBottomOf="@id/tf_password" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</FrameLayout>

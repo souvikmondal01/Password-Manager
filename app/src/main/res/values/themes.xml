@@ -1,0 +1,17 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="Base.Theme.PasswordManager" parent="Theme.Material3.Light.NoActionBar">
+        <item name="colorPrimary">@color/ash</item>
+        <item name="colorPrimaryContainer">@color/blue</item>
+        <item name="colorOnPrimaryContainer">@color/white</item>
+        <item name="colorSurfaceContainerLow">@color/bottom_sheet_background</item>
+        <item name="colorOutline">@color/grey_dark</item>
+        <item name="colorOnSurfaceVariant">@color/grey_dark</item>
+        <item name="colorOnSurface">@color/ash</item>
+        <item name="android:colorBackground">@color/background</item>
+        <item name="android:statusBarColor">@color/background</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+
+    <style name="Theme.PasswordManager" parent="Base.Theme.PasswordManager" />
+</resources>
