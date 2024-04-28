@@ -53,5 +53,4 @@ class AccountViewModel @Inject constructor(
         }
     }
 
-
 }

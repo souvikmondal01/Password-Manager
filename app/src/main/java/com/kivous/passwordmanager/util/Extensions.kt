@@ -3,7 +3,9 @@ package com.kivous.passwordmanager.util
 import android.util.Log
 import android.view.View
 import android.widget.Toast
+import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
+import com.kivous.passwordmanager.R
 
 object Extensions {
 
@@ -28,5 +30,8 @@ object Extensions {
     }
 
     fun timeStamp(): Long = System.currentTimeMillis()
+
+    fun Fragment.getColor(color: Int) = ContextCompat.getColor(requireContext(), color)
+
 
 }

@@ -9,4 +9,7 @@
     <color name="red">#F04646</color>
     <color name="grey">#EDEDED</color>
     <color name="grey_dark">#C6C6C6</color>
+    <color name="weak">#D22C2D</color>
+    <color name="medium">#F9A61B</color>
+    <color name="strong">#008558</color>
 </resources>

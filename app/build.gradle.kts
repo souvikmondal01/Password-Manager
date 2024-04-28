@@ -64,7 +64,7 @@ dependencies {
     implementation(libs.hilt.android)
     ksp(libs.hilt.compiler)
 
-    // Gson
-    implementation(libs.converter.gson)
+    // Biometric
+    implementation(libs.androidx.biometric)
 
 }

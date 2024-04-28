@@ -7,7 +7,6 @@ import androidx.room.OnConflictStrategy
 import androidx.room.Query
 import androidx.room.Update
 import com.kivous.passwordmanager.domain.model.Account
-import com.kivous.passwordmanager.util.Response
 import kotlinx.coroutines.flow.Flow
 
 @Dao
